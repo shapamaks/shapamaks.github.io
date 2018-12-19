@@ -1,0 +1,105 @@
+
+.container {
+	display: flex;
+	background:linear-gradient(#D8BFD8, white);
+	flex-wrap: wrap;
+	justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    font-family: 'Righteous', cursive;
+}
+
+.first {
+	
+	display: flex;
+	align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+ }
+
+.second {
+	
+	justify-content: space-around;
+	flex-direction: column;
+}
+
+.photo {
+	border: 8px solid; border-color: #666666; border-radius: 100%;
+	margin-left: 30px;
+	position: relative;
+	margin-top: -180px;
+}
+
+.image {
+	display: flex;
+	justify-content: space-around;
+}
+
+.image img { 
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+ }
+ 
+.image img:hover{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+ }	
+
+h1 {
+	color: white;
+	border: 1px solid #a1a1a1;
+	background-color: #a1a1a1;
+	padding-right: 100px;
+	padding-left: 30px;
+	padding-bottom: 180px;
+	-webkit-clip-path: polygon(0 100%, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0%, 100% 0, 100% 30%, 0 100%);
+    font-family: 'Abril Fatface', cursive;
+    font-size: 65px;
+}
+
+h4 {
+	border: 2px dotted red;
+	border-radius: 30%;
+    color: white;
+	border: 1px solid #a1a1a1;
+	background-color: #a1a1a1;
+	padding: 10px;
+	padding-right: 50px;
+	font-size: 20px;
+}
+
+h5 {
+	font-size: 20px;
+}
+
+hr {
+	height: 10px;
+	background-color: #e3e4da;
+}
+
+a {
+	text-decoration: none;
+	color: #333333;
+	
+}
+
+@media screen and (max-width: 700px){
+  .page .page-wrapper .page-wrapper-open-products .page-wrapper-open-products-data .page-wrapper-open-products-data-item{
+      flex-wrap: wrap;
+  }
+  .page .page-wrapper .page-wrapper-open-products .page-wrapper-open-products-data .page-wrapper-open-products-data-item .page-wrapper-open-products-data-item-img{
+    background-size: contain;
+  }
+  .page .page-wrapper .page-wrapper-open-products .page-wrapper-open-products-data .page-wrapper-open-products-data-item .page-wrapper-open-products-data-item-data strong{
+    text-align: center;
+  }
+}
+
+
+
+
+ 
